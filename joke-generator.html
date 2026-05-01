@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator 😂</title>
+    <link rel="stylesheet" href="joke-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="joke-generator">
+            <div class="header">
+                <h1>🎭 Random Joke Generator</h1>
+                <p>Get a laugh with random jokes from the internet!</p>
+            </div>
+
+            <div class="joke-display">
+                <div class="joke-content" id="jokeContent">
+                    <p>Click "Get Joke" to start laughing! 😄</p>
+                </div>
+            </div>
+
+            <div class="joke-loader" id="jokeLoader" style="display: none;">
+                <div class="spinner"></div>
+                <p>Loading your joke...</p>
+            </div>
+
+            <div class="joke-type" id="jokeType" style="display: none;">
+                <span id="typeLabel"></span>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-primary" id="getJokeBtn">
+                    <span>🎲 Get Joke</span>
+                </button>
+                <button class="btn btn-secondary" id="shareBtn" style="display: none;">
+                    <span>📤 Share</span>
+                </button>
+                <button class="btn btn-secondary" id="copyBtn" style="display: none;">
+                    <span>📋 Copy</span>
+                </button>
+            </div>
+
+            <div class="share-options" id="shareOptions" style="display: none;">
+                <h3>Share on:</h3>
+                <div class="share-buttons">
+                    <a href="#" id="shareTwitter" class="share-btn twitter" title="Share on Twitter">𝕏 Twitter</a>
+                    <a href="#" id="shareWhatsapp" class="share-btn whatsapp" title="Share on WhatsApp">💬 WhatsApp</a>
+                    <a href="#" id="shareFacebook" class="share-btn facebook" title="Share on Facebook">👍 Facebook</a>
+                </div>
+            </div>
+
+            <div class="joke-counter">
+                <p>Jokes loaded: <span id="jokeCount">0</span></p>
+            </div>
+
+            <div class="keyboard-hint">
+                <p>💡 Tip: Press <kbd>J</kbd> to get a new joke instantly!</p>
+            </div>
+
+            <div class="error-message" id="errorMessage" style="display: none;">
+                <p id="errorText"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="joke-script.js"></script>
+</body>
+</html>
